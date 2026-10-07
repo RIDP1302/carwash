@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard — CuciMesin</title>
+</head>
+<body>
+
+<h1>Dashboard Utama</h1>
+<p>Ikhtisar performa CuciMesin Carwash hari ini</p>
+<p><strong>#PASTIBERSIH</strong></p>
+
+<nav>
+<ul>
+<li><a href="dashboard.html"><strong>Dashboard</strong></a></li>
+<li><a href="order.html">Antrian/Order</a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+<li><a href="index.html">Keluar</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<!-- SAPAAN ADMIN — diisi dari database via id="sapaan-admin" -->
+<p>Selamat datang, <strong><span id="sapaan-admin">Admin</span></strong></p>
+
+<hr>
+
+<h2>Ringkasan Hari Ini</h2>
+<!-- Data ringkasan dimuat dari database via id="ringkasan-hari-ini" -->
+<div id="ringkasan-hari-ini">
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<th>Total Order</th>
+<th>Dalam Pengerjaan</th>
+<th>Selesai Hari Ini</th>
+<th>Revenue Hari Ini</th>
+</tr>
+<tr>
+<td><strong>0 SPK</strong></td>
+<td><strong>0 Unit</strong></td>
+<td><strong>0 Unit</strong></td>
+<td><strong>Rp 0</strong></td>
+</tr>
+</table>
+</div>
+
+<hr>
+
+<h2>Antrian & Live SPK</h2>
+<!-- Data antrian dimuat dari database via id="antrian-spk" -->
+<div id="antrian-spk">
+<p><em>Belum ada order hari ini.</em></p>
+</div>
+
+<p><a href="order-baru.html"><button>+ Buat SPK Baru</button></a></p>
+
+<hr>
+
+<h2>Tren Mingguan</h2>
+<!-- Data tren dimuat dari database via id="tren-mingguan" -->
+<div id="tren-mingguan">
+<p><em>Belum ada data mingguan.</em></p>
+</div>
+
+</body>
+</html>

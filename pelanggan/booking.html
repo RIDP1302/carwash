@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Booking Online — CuciMesin</title>
+</head>
+<body>
+
+<table width="100%">
+<tr>
+<td align="left">
+<nav>
+<ul>
+<li><a href="dashboard.html">Beranda</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="booking.html"><strong>Booking Online</strong></a></li>
+<li><a href="status.html">Status</a></li>
+<li><a href="profil.html">Profil</a></li>
+</ul>
+</nav>
+</td>
+<td align="right">
+<a href="index.html"><button>Logout</button></a>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h1>Booking Cuci Mesin Online</h1>
+<p><strong>#PastiBersih, PastiTerjangkau!</strong></p>
+<p>Spesialis pembersihan ruang mesin kendaraan dengan metode kering & masking elektrikal total.</p>
+
+<h2>Formulir Registrasi Booking</h2>
+
+<form id="form-booking" action="status.html" method="POST">
+<p><label>Nama Lengkap / Instansi:<br>
+<input type="text" name="nama" id="booking-nama" required></label></p>
+<p><label>No. Handphone / WhatsApp:<br>
+<input type="tel" name="wa" id="booking-wa" required></label></p>
+<p><label>Alamat Email:<br>
+<input type="email" name="email" id="booking-email"></label></p>
+<p><label>Nomor Plat Kendaraan:<br>
+<input type="text" name="plat" id="booking-plat" required></label></p>
+<p><label>Merk & Tipe Mobil:<br>
+<input type="text" name="tipe" id="booking-tipe" required></label></p>
+<p><label>Pilih Layanan:<br>
+<select name="layanan" id="booking-layanan" required>
+<option value="">-- Pilih Paket --</option>
+<option>Cuci Mesin Standard - Rp 95.000</option>
+<option>Cuci Mesin Premium - Rp 150.000</option>
+<option>Cuci Mesin + Detailing - Rp 350.000</option>
+</select></label></p>
+<p><label>Pilih Tanggal:<br>
+<input type="date" name="tanggal" id="booking-tanggal" required></label></p>
+<p><label>Pilih Jam:<br>
+<input type="time" name="jam" id="booking-jam" required></label></p>
+<p><label>Catatan Tambahan (Opsional):<br>
+<textarea name="catatan" id="booking-catatan" rows="3" cols="40" placeholder="Berikan info jika ada modifikasi kelistrikan tambahan..."></textarea></label></p>
+<p><button type="submit">BOOKING SEKARANG</button></p>
+</form>
+
+<p><em>Garansi Total Aman Kelistrikan. Rusak Kami Ganti 100%.</em></p>
+
+</body>
+</html>

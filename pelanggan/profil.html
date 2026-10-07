@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Profil Saya — CuciMesin</title>
+</head>
+<body>
+
+<table width="100%">
+<tr>
+<td align="left">
+<nav>
+<ul>
+<li><a href="dashboard.html">Beranda</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="booking.html">Booking Online</a></li>
+<li><a href="status.html">Status</a></li>
+<li><a href="profil.html"><strong>Profil</strong></a></li>
+</ul>
+</nav>
+</td>
+<td align="right">
+<a href="index.html"><button>Logout</button></a>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h1>Profil Saya</h1>
+<p>Kelola data diri dan kontak Anda.</p>
+
+<!-- Data profil dimuat dari database via id="data-profil" -->
+<div id="data-profil">
+<p>Nama Lengkap: <em>(diisi dari database)</em></p>
+<p>Nomor WhatsApp: <em>(diisi dari database)</em></p>
+<p>Email: <em>(diisi dari database)</em></p>
+<p>Alamat: <em>(diisi dari database)</em></p>
+<p>Kategori Member: <em>(diisi dari database)</em></p>
+</div>
+
+<hr>
+
+<h2>Ubah Password</h2>
+<form id="form-ubah-password" action="profil.html" method="POST">
+<p><label>Password Lama:<br>
+<input type="password" name="old_password" required></label></p>
+<p><label>Password Baru:<br>
+<input type="password" name="new_password" required></label></p>
+<p><label>Konfirmasi Password Baru:<br>
+<input type="password" name="confirm_password" required></label></p>
+<p><button type="submit">Simpan Password Baru</button></p>
+</form>
+
+</body>
+</html>

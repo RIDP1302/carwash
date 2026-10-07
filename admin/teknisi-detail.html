@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Detail Tugas Teknisi</title>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="order.html">Antrian/Order</a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<p><a href="teknisi-tugas.html">← Kembali ke Tugas Saya</a></p>
+
+<!-- Detail tugas dimuat dari database via id="detail-tugas" -->
+<div id="detail-tugas">
+<h1>SPK-XXXXXX</h1>
+<p id="detail-tugas-info"><em>Info tugas dimuat dari database.</em></p>
+</div>
+
+<hr>
+
+<h2>📋 Checklist Pengerjaan</h2>
+<form id="form-checklist">
+<p><label><input type="checkbox" name="masking-ecu"> Masking ECU & Kabel Elektrikal</label></p>
+<p><label><input type="checkbox" name="cek-aki"> Cek Kondisi Aki & Alternator</label></p>
+<p><label><input type="checkbox" name="chemical"> Penyemprotan Chemical Khusus</label></p>
+<p><label><input type="checkbox" name="bilas"> Bilas & Pengeringan Detail</label></p>
+</form>
+
+<hr>
+
+<h2>📷 Foto Mesin Sebelum</h2>
+<p>Ambil foto mesin dari 2 sudut berbeda.</p>
+<p><button>📸 Buka Kamera — Sudut Kiri</button></p>
+<p><button>📸 Buka Kamera — Sudut Kanan</button></p>
+
+<hr>
+
+<h2>⏱️ Proses Pengerjaan</h2>
+<p><strong>DURASI: <span id="durasi-pengerjaan">00:00:00</span></strong></p>
+<ul>
+<li><input type="checkbox" checked disabled> Checklist & Masking</li>
+<li><input type="checkbox" checked disabled> Foto Sebelum Cuci</li>
+<li><input type="checkbox" checked disabled> Proses Cuci Mesin (Aktif)</li>
+<li><input type="checkbox" disabled> Foto Setelah Selesai</li>
+</ul>
+
+<hr>
+
+<h2>📷 Foto Mesin Sesudah</h2>
+<p><button>📸 Ambil Foto Hasil Akhir</button></p>
+<p>Sebelum Cuci | Setelah Cuci</p>
+
+<hr>
+
+<p><a href="teknisi-tugas.html"><button>Selesai Pengerjaan ✓</button></a></p>
+<p><em>Setelah selesai, sertifikat garansi otomatis dikirim ke pelanggan.</em></p>
+
+</body>
+</html>

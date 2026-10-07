@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Buat SPK Baru</title>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="order.html">Antrian/Order</a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<p><a href="order.html">← Kembali ke Order</a></p>
+<h1>Buat SPK Baru</h1>
+
+<form id="form-spk-baru" action="order.html" method="POST">
+<h2>1. Data Pelanggan</h2>
+<p><label>Nama Pelanggan:<br><input type="text" name="nama" id="spk-nama" required></label></p>
+<p><label>Nomor WhatsApp:<br><input type="tel" name="wa" id="spk-wa" required></label></p>
+<p><label>Kategori Member:<br>
+<select name="kategori" id="spk-kategori">
+<option>Normal</option>
+<option>Member B2B</option>
+</select></label></p>
+
+<h2>2. Detail Kendaraan</h2>
+<p><label>Plat Nomor:<br><input type="text" name="plat" id="spk-plat" required></label></p>
+<p><label>Merk / Tipe Kendaraan:<br><input type="text" name="tipe" id="spk-tipe" required></label></p>
+
+<h2>3. Layanan & Penugasan</h2>
+<p><label>Pilih Paket Layanan:<br>
+<select name="layanan" id="spk-layanan">
+<option>Cuci Mesin Standard — Rp 95.000</option>
+<option>Cuci Mesin Premium — Rp 150.000</option>
+<option>Engine Detailing — Rp 350.000</option>
+</select></label></p>
+<p><label>Tugaskan Teknisi:<br>
+<select name="teknisi" id="spk-teknisi">
+<option>Dedi Setiadi (Tersedia)</option>
+<option>Ahmad Subarjo</option>
+<option>Rian Hidayat</option>
+</select></label></p>
+
+<p>Total Tagihan (Belum Lunas): <strong id="spk-total">Rp 0</strong></p>
+
+<p>
+<a href="order.html"><button type="button">Batal</button></a>
+<button type="submit">Simpan & Buat SPK</button>
+</p>
+</form>
+
+</body>
+</html>

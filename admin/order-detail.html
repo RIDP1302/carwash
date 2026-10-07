@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Detail SPK</title>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="order.html">Antrian/Order</a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<p><a href="order.html">← Kembali ke Order</a></p>
+
+<!-- Detail SPK dimuat dari database via id="detail-spk" -->
+<div id="detail-spk">
+<h1>SPK-XXXXXX</h1>
+<p id="detail-tanggal"><em>Tanggal dimuat dari database.</em></p>
+
+<h2>INFO PELANGGAN</h2>
+<p id="detail-pelanggan"><em>Data pelanggan dimuat dari database.</em></p>
+
+<h2>DETAIL KENDARAAN</h2>
+<p id="detail-kendaraan"><em>Data kendaraan dimuat dari database.</em></p>
+
+<h2>TEKNISI CHECKLIST & MASKING</h2>
+<ul id="detail-checklist">
+<li><input type="checkbox"> Masking ECU & Kabel Elektrikal</li>
+<li><input type="checkbox"> Check Kondisi Aki & Alternator</li>
+<li><input type="checkbox"> Penyemprotan Chemical Khusus</li>
+<li><input type="checkbox"> Bilas & Pengeringan Detail</li>
+</ul>
+
+<h2>FOTO HASIL KERJA</h2>
+<p>Sebelum Cuci | Setelah Selesai</p>
+
+<p>
+<button>Cetak SPK</button>
+<button>Kirim Invoice</button>
+<a href="teknisi-detail.html"><button>Proses Teknisi →</button></a>
+</p>
+</div>
+
+</body>
+</html>

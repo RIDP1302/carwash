@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Form Pelanggan</title>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="order.html">Antrian/Order</a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<p><a href="pelanggan.html">← Kembali ke Daftar Pelanggan</a></p>
+<h1>Informasi Pelanggan</h1>
+
+<form id="form-pelanggan" action="pelanggan.html" method="POST">
+<h2>1. Data Pelanggan</h2>
+<p><label>Nama Pelanggan:<br><input type="text" name="nama" id="plg-nama" required></label></p>
+<p><label>Nomor WhatsApp:<br><input type="tel" name="wa" id="plg-wa" required></label></p>
+<p><label>Kategori Member:<br>
+<select name="kategori" id="plg-kategori">
+<option>Normal</option>
+<option>Member B2B</option>
+</select></label></p>
+
+<h2>2. Detail Kendaraan</h2>
+<p><label>Plat Nomor:<br><input type="text" name="plat" id="plg-plat"></label></p>
+<p><label>Merk / Tipe Kendaraan:<br><input type="text" name="tipe" id="plg-tipe"></label></p>
+
+<h2>3. Layanan & Penugasan</h2>
+<p><label>Pilih Paket Layanan:<br>
+<select name="layanan" id="plg-layanan">
+<option>Cuci Mesin Standard</option>
+<option>Cuci Mesin Premium</option>
+<option>Engine Detailing</option>
+</select></label></p>
+<p><label>Tugaskan Teknisi:<br>
+<select name="teknisi" id="plg-teknisi">
+<option>Dedi Setiadi (Tersedia)</option>
+<option>Ahmad Subarjo</option>
+<option>Rian Hidayat</option>
+</select></label></p>
+
+<p>Total Tagihan (Belum Lunas): <strong id="plg-total">Rp 0</strong></p>
+
+<p>
+<a href="pelanggan.html"><button type="button">Batal</button></a>
+<button type="submit">Simpan & Buat SPK</button>
+</p>
+</form>
+
+</body>
+</html>

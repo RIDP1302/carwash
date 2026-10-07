@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Antrian / Order</title>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="order.html"><strong>Antrian/Order</strong></a></li>
+<li><a href="pelanggan.html">Pelanggan</a></li>
+<li><a href="teknisi.html">Teknisi</a></li>
+<li><a href="laporan.html">Laporan</a></li>
+<li><a href="keuangan.html">Keuangan</a></li>
+<li><a href="pengaturan.html">Pengaturan</a></li>
+</ul>
+</nav>
+
+<hr>
+
+<h1>Manajemen Order & SPK</h1>
+<p>Buat, cetak, dan pantau Surat Perintah Kerja (SPK)</p>
+
+<p>
+<label>Tanggal: <input type="date" id="filter-tanggal"></label>
+<label>Status:
+<select id="filter-status">
+<option>Semua Status</option>
+<option>Menunggu</option>
+<option>Dikerjakan</option>
+<option>Selesai</option>
+</select>
+</label>
+<label>Kategori:
+<select id="filter-kategori">
+<option>Semua Kategori</option>
+<option>Normal</option>
+<option>Member B2B</option>
+</select>
+</label>
+<a href="order-baru.html"><button>+ SPK Baru</button></a>
+</p>
+
+<!-- Data SPK dimuat dari database via id="daftar-spk" -->
+<div id="daftar-spk">
+<p><em>Belum ada SPK. Klik "+ SPK Baru" untuk membuat order pertama.</em></p>
+</div>
+
+</body>
+</html>
