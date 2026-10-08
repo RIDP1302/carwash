@@ -2,72 +2,107 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard — CuciMesin</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<table width="100%">
-<tr>
-<td align="left">
-<nav>
-<ul>
-<li><a href="dashboard.html"><strong>Beranda</strong></a></li>
-<li><a href="layanan.html">Layanan</a></li>
-<li><a href="booking.html">Booking Online</a></li>
-<li><a href="status.html">Status</a></li>
-<li><a href="profil.html">Profil</a></li>
-</ul>
-</nav>
-</td>
-<td align="right">
-<a href="index.html"><button>Logout</button></a>
-</td>
-</tr>
-</table>
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+  <div class="loader-bubble"></div>
+  <p>CuciMesin</p>
+</div>
 
-<hr>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="dashboard.html" class="logo">💧 CuciMesin</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Beranda</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="booking.html">Booking Online</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="profil.html">Profil</a></li>
+      </ul>
+    </nav>
+    <a href="index.html" class="btn-logout">Logout</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-<h1>CuciMesin Carwash</h1>
-<p><strong>#PastiBersih, PastiTerjangkau!</strong></p>
-<p>Spesialis cuci mesin mobil — aman, cepat, bergaransi.</p>
-<p>Mengembalikan performa dan estetika ruang mesin kendaraan Anda dengan metode kering (dry-wash) dan masking elektrikal total. Bebas korsleting, dijamin kinclong.</p>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content reveal">
+    <h1 class="hero-title">CuciMesin Carwash</h1>
+    <p class="tagline"><strong>#PastiBersih, PastiTerjangkau!</strong></p>
+    <p class="hero-desc">Spesialis cuci mesin mobil — aman, cepat, bergaransi.</p>
+    <p class="hero-desc">Mengembalikan performa dan estetika ruang mesin kendaraan Anda dengan metode kering (dry-wash) dan masking elektrikal total. Bebas korsleting, dijamin kinclong.</p>
+    <a href="booking.html" class="btn-primary">
+      <span>Booking Sekarang</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
 
-<p><a href="booking.html"><button>Booking Sekarang</button></a></p>
+<!-- Why Us -->
+<section class="section reveal">
+  <h2 class="section-title">Mengapa Memilih CuciMesin?</h2>
+  <p class="section-sub">Standar pelayanan showroom kini hadir untuk kendaraan pribadi Anda.</p>
 
-<hr>
+  <div class="cards">
+    <div class="card reveal-card">
+      <div class="card-icon">🛡️</div>
+      <h3>Garansi Aman 100%</h3>
+      <p>Teknik masking elektrikal ketat pada ECU, alternator, dan kabel busi untuk mencegah risiko korsleting.</p>
+    </div>
+    <div class="card reveal-card">
+      <div class="card-icon">🧪</div>
+      <h3>Chemical Khusus Mesin</h3>
+      <p>Menggunakan engine degreaser dan dresser premium yang meluruhkan oli tanpa merusak karet atau selang.</p>
+    </div>
+    <div class="card reveal-card">
+      <div class="card-icon">👨‍🔧</div>
+      <h3>Teknisi Tersertifikasi</h3>
+      <p>Dikerjakan oleh spesialis yang paham karakteristik berbagai jenis dan tipe ruang mesin mobil Asia hingga Eropa.</p>
+    </div>
+  </div>
+</section>
 
-<h2>Mengapa Memilih CuciMesin?</h2>
-<p>Standar pelayanan showroom kini hadir untuk kendaraan pribadi Anda.</p>
+<!-- Tentang Kami -->
+<section class="section about reveal">
+  <h2 class="section-title">Tentang Kami</h2>
+  <p>
+    CuciMesin adalah spesialis cuci mesin mobil dengan metode <strong>dry-wash</strong> dan <strong>masking elektrikal total</strong>. Berpusat di Tuban, kami sudah menangani <strong>500+ mesin</strong>, bekerja sama dengan <strong>15+ mitra showroom</strong>, dengan <strong>0% insiden kerusakan kelistrikan</strong>.
+  </p>
 
-<h3>✅ Garansi Aman 100%</h3>
-<p>Teknik masking elektrikal ketat pada ECU, alternator, dan kabel busi untuk mencegah risiko korsleting.</p>
+  <div class="stats">
+    <div class="stat"><span class="counter" data-target="500">0</span><p>Mesin Ditangani</p></div>
+    <div class="stat"><span class="counter" data-target="15">0</span><p>Mitra Showroom</p></div>
+    <div class="stat"><span class="counter" data-target="0">0</span><p>Insiden Kerusakan</p></div>
+  </div>
 
-<h3>✅ Chemical Khusus Mesin</h3>
-<p>Menggunakan engine degreaser dan dresser premium yang meluruhkan oli tanpa merusak karet atau selang.</p>
+  <p class="badges">✅ Garansi aman 100% &nbsp;|&nbsp; ✅ Chemical khusus mesin &nbsp;|&nbsp; ✅ Teknisi tersertifikasi</p>
+</section>
 
-<h3>✅ Teknisi Tersertifikasi</h3>
-<p>Dikerjakan oleh spesialis yang paham karakteristik berbagai jenis dan tipe ruang mesin mobil Asia hingga Eropa.</p>
+<!-- Kontak -->
+<section class="section contact reveal">
+  <h2 class="section-title">Kontak</h2>
+  <div class="contact-grid">
+    <div class="contact-item">📍 Jl. Letda Sucipto, Tuban, Jawa Timur</div>
+    <div class="contact-item">📱 WhatsApp: 0812-3456-7890</div>
+    <div class="contact-item">✉️ cs@cucimesin.id</div>
+  </div>
+</section>
 
-<hr>
+<footer class="footer">
+  <p><small>CuciMesin Carwash © 2024 — Engine Wash Specialist v2.4</small></p>
+</footer>
 
-<h2>Tentang Kami</h2>
-<p>
-CuciMesin adalah spesialis cuci mesin mobil dengan metode <strong>dry-wash</strong> dan <strong>masking elektrikal total</strong>. Berpusat di Tuban, kami sudah menangani <strong>500+ mesin</strong>, bekerja sama dengan <strong>15+ mitra showroom</strong>, dengan <strong>0% insiden kerusakan kelistrikan</strong>.
-</p>
-<p>
-✅ Garansi aman 100% &nbsp;|&nbsp; ✅ Chemical khusus mesin &nbsp;|&nbsp; ✅ Teknisi tersertifikasi
-</p>
-
-<hr>
-
-<h2>Kontak</h2>
-<p>📍 Jl. Letda Sucipto, Tuban, Jawa Timur</p>
-<p>📱 WhatsApp: 0812-3456-7890</p>
-<p>✉️ cs@cucimesin.id</p>
-
-<hr>
-
-<p><small>CuciMesin Carwash © 2024 — Engine Wash Specialist v2.4</small></p>
-
+<script src="script.js"></script>
 </body>
 </html>
